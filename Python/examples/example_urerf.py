@@ -5,6 +5,7 @@ This demonstrates how to use URerF for unsupervised learning tasks such as
 clustering and generating similarity matrices from unlabeled data.
 """
 
+import os
 import numpy as np
 from matplotlib import pyplot as plt
 from sklearn.cluster import AgglomerativeClustering
@@ -117,8 +118,9 @@ axes[1].set_xlabel("Feature 1")
 axes[1].set_ylabel("Feature 2")
 
 plt.tight_layout()
-plt.savefig("/tmp/urerf_example.png", dpi=100)
-print("Similarity matrix visualization saved to /tmp/urerf_example.png")
+output_path = os.path.join(os.getcwd(), "urerf_example.png")
+plt.savefig(output_path, dpi=100)
+print(f"Similarity matrix visualization saved to {output_path}")
 
 # Example 4: Parameter tuning
 print("\n" + "=" * 60)
