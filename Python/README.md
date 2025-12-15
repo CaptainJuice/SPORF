@@ -10,9 +10,10 @@ Documentation for RerF Python module can be found at [rerf.neurodata.io](https:/
 
 See install [instructions](https://rerf.neurodata.io/install.html).
 
-## Example
+## Examples
 
-See [example](https://github.com/neurodata/RerF/blob/staging/Python/examples/example_rerfClassifier.py) for basic usage.
+- [Basic rerfClassifier usage](https://github.com/neurodata/RerF/blob/staging/Python/examples/example_rerfClassifier.py)
+- [Unsupervised Random Forest (URerF) usage](https://github.com/neurodata/RerF/blob/staging/Python/examples/example_urerf.py) - For clustering and similarity matrix generation
 
 ## Reference
 

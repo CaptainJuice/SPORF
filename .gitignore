@@ -204,3 +204,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Example output files
+Python/examples/urerf_example.png
