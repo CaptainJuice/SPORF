@@ -121,8 +121,13 @@ plt.tight_layout()
 # Save in the examples directory
 script_dir = os.path.dirname(os.path.abspath(__file__))
 output_path = os.path.join(script_dir, "urerf_example.png")
-plt.savefig(output_path, dpi=100)
-print(f"Similarity matrix visualization saved to {output_path}")
+try:
+    plt.savefig(output_path, dpi=100)
+    print(f"Similarity matrix visualization saved to {output_path}")
+except (IOError, OSError) as e:
+    print(f"Warning: Could not save visualization: {e}")
+finally:
+    plt.close(fig)
 
 # Example 4: Parameter tuning
 print("\n" + "=" * 60)
