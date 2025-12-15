@@ -118,7 +118,9 @@ axes[1].set_xlabel("Feature 1")
 axes[1].set_ylabel("Feature 2")
 
 plt.tight_layout()
-output_path = os.path.join(os.getcwd(), "urerf_example.png")
+# Save in the examples directory
+script_dir = os.path.dirname(os.path.abspath(__file__))
+output_path = os.path.join(script_dir, "urerf_example.png")
 plt.savefig(output_path, dpi=100)
 print(f"Similarity matrix visualization saved to {output_path}")
 

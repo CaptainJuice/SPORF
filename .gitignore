@@ -206,4 +206,4 @@ dmypy.json
 .pyre/
 
 # Example output files
-urerf_example.png
+Python/examples/urerf_example.png
